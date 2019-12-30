@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:gravity="center_vertical"
+    android:background="#0195ff"
+     >
+    
+	<ImageView 
+	    android:id="@+id/iv_head_left"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="5dip"
+	    android:background="@drawable/titleback"
+	    android:layout_centerVertical="true"
+	    />
+	<TextView
+		android:id="@+id/tv_head_return"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="27dip"
+		android:layout_marginTop="10dp"
+		android:text="返回"
+		android:textSize="20dp"
+		android:textColor="#ffffff"
+		/>
+    <TextView 
+        android:id="@+id/tv_head_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户注册"
+        android:textSize="25dp"
+        android:layout_centerInParent="true"
+        android:textColor="#ffffff"
+        />
+</RelativeLayout>

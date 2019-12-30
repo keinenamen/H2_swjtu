@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.swjtu.h2"
+    android:versionCode="55"
+    android:versionName="3.0.2">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 蓝牙 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!-- 基于地理位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.swjtu.h2.custom.GloableData"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <!-- 高德地图key -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="6a54db31e254762990ef54f6ea2ada9f" />
+
+        <service android:name="com.amap.api.location.APSService" />
+
+        <activity
+            android:name="com.swjtu.h2.ui.LaunchActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.swjtu.h2.ui.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.swjtu.h2.ui.HeartRateLine" />
+        <activity
+            android:name="com.swjtu.h2.ui.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.swjtu.h2.ui.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.swjtu.h2.ui.PwdForgetActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.swjtu.h2.ui.BloodPressureLine" />
+        <activity
+            android:name="com.swjtu.h2.ui.BluetoothActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.swjtu.h2.ui.H2_locationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.swjtu.h2.ui.KnowledgeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.swjtu.h2.ui.Knowledge_resActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <activity
+            android:name="com.amap.navi.demo.activity.IndexActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name="com.amap.api.navi.AmapRouteActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name="com.amap.navi.demo.activity.BasicNaviActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.CustomZoomInIntersectionViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.CustomRouteActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.CustomDriveWayViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.HudDisplayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.IntelligentBroadcastActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.RoutePlanningActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.amap.navi.demo.activity.GPSNaviActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.CustomTrafficBarViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.CustomTrafficProgressBarActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.SimpleNaviActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.GetNaviStepsAndLinksActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.NorthModeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.OverviewModeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.BasicWalkNaviActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.UseExtraGpsDataActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.CustomCarActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.CustomRouteTextureInAMapNaviViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.CustomDirectionViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.CustomTrafficButtonViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.CustomNextTurnTipViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.CustomZoomButtonViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.CustomOverviewButtonViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.RestRouteShowActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.RouteNaviActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.SingleRouteCalculateActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.WalkRouteCalculateActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.RideRouteCalculateActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.EmulatorActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.custom.CustomUiActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.DriverListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.TrunkRouteCalculateActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.SetTrunkParamsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.SwitchMasterRoadNaviActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.IflyVoiceActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.amap.navi.demo.activity.custom.AllCustomDriveWayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/navi_custom_route_way"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.amap.navi.demo.activity.custom.AllCustomTrafficBarActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/navi_custom_traffic_bar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.amap.navi.demo.activity.custom.AllCustomCrossingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/navi_custom_crossing"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.amap.navi.demo.activity.custom.AllCustomCarRouteActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/navi_custom_car_route"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.amap.navi.demo.activity.custom.AllCustomNextRoadInfoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/navi_custom_road_distance_nexttip"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.amap.navi.demo.activity.custom.AllCustomCameraActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/navi_custom_camera"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.amap.navi.demo.activity.custom.AllCustomNaviActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/navi_custom_navi"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity android:name="com.amap.navi.demo.activity.search.SearchPoiActivity" />
+    </application>
+
+</manifest>

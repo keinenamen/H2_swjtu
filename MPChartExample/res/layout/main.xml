@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dip"
+            android:gravity="center"
+            android:background="#0195ff"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="“氢”健康"
+                android:textSize="25dp"
+                android:textColor="#F3F4F6"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0.0dip"
+            android:layout_weight="1"
+            android:scaleType="center" >
+
+            <RelativeLayout
+                android:id="@+id/iv_personal_order"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/common_list_group_item_background"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    style="@style/iv_personal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:background="@drawable/personal_finance"
+                    android:layout_centerVertical="true"
+                    android:gravity="left|center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20.0dip"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:text="我的设备" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dip"
+            android:layout_weight="1"
+            android:scaleType="center" >
+
+            <RelativeLayout
+                android:id="@+id/iv_personal_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/common_list_group_item_background"
+                android:clickable="true"
+                android:focusable="true" >
+
+                <ImageView
+                    style="@style/iv_personal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:background="@drawable/personal_info"
+                    android:layout_centerVertical="true"
+                    android:gravity="left|center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20.0dip"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:text="氢机位置" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0.0dip"
+            android:layout_weight="1"
+            android:scaleType="center" >
+
+            <RelativeLayout
+                android:id="@+id/iv_personal_collect"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/common_list_group_item_background"
+                android:clickable="true"
+                android:focusable="true" >
+
+                <ImageView
+                    style="@style/iv_personal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:background="@drawable/personal_shouchang"
+                    android:layout_centerVertical="true"
+                    android:gravity="left|center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20.0dip"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:text="健康导航" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0.0dip"
+            android:layout_weight="1"
+            android:scaleType="center" >
+
+            <RelativeLayout
+                android:id="@+id/iv_personal_scan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/common_list_group_item_background"
+                android:clickable="true"
+                android:focusable="true" >
+
+                <ImageView
+                    style="@style/iv_personal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:background="@drawable/personal_shaoyishao"
+                    android:layout_centerVertical="true"
+                    android:gravity="left|center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20.0dip"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:text="血压曲线" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0.0dip"
+            android:layout_weight="1"
+            android:scaleType="center" >
+
+            <RelativeLayout
+                android:id="@+id/iv_personal_yuanbao"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/common_list_group_item_background"
+                android:clickable="true"
+                android:focusable="true" >
+
+                <ImageView
+                    style="@style/iv_personal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:background="@drawable/personal_yuanbao"
+                    android:layout_centerVertical="true"
+                    android:gravity="left|center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20.0dip"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:text="心率曲线" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0.0dip"
+            android:layout_weight="1"
+            android:scaleType="center" >
+
+            <RelativeLayout
+                android:id="@+id/iv_personal_call"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/common_list_group_item_background"
+                android:clickable="true"
+                android:focusable="true" >
+
+                <ImageView
+                    style="@style/iv_personal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:background="@drawable/personal_call"
+                    android:layout_centerVertical="true"
+                    android:gravity="left|center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20.0dip"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:text="健康咨询" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
